@@ -3,10 +3,6 @@ export const NOTION_STATUS_COMPLETED = "완료";
 export const NOTION_CATEGORY = "카테고리";
 
 export const Category = {
-  all: {
-    name: "ALL",
-    slug: "all",
-  },
   design: {
     name: "DESIGN",
     slug: "design",

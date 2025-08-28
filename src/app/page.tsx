@@ -1,13 +1,13 @@
-import Header from "@/components/Header";
+import Layout from '@/components/Layout';
+import NewsList from '@/components/NewsList';
+import { getAllNotionPages } from '@/lib/notion';
 
 export default async function Home() {
+  const { ids, properties } = await getAllNotionPages();
+  
   return (
-    <div className="p-6 h-1000">
-      <Header />
-      <main className="">
-      </main>
-      <footer className="">
-      </footer>
-    </div>
+    <Layout>
+      <NewsList properties={properties} />
+    </Layout>
   );
 }
