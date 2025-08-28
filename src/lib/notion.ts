@@ -1,3 +1,4 @@
+import { NOTION_CATEGORY, NOTION_STATUS, NOTION_STATUS_COMPLETED } from "@/constant";
 import { BlockObjectResponse, Client } from "@notionhq/client";
 import { z } from "zod";
 
@@ -15,9 +16,9 @@ export const getAllNotionPages = async () => {
     const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
-        property: '상태',
+        property: NOTION_STATUS,
         status: {
-          equals: '완료',
+          equals: NOTION_STATUS_COMPLETED,
         },
       },
     });
@@ -47,7 +48,7 @@ export const getNotionPageContentByCategory = async (category: string) => {
     const response = await notion.databases.query({
       database_id: databaseId,
       filter: {
-        property: '카테고리',
+        property: NOTION_CATEGORY,
         multi_select: {
           contains: category,
         },
