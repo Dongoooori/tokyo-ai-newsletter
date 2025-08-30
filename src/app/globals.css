@@ -16,6 +16,11 @@
   --spacing-20: 20px;
   --spacing-40: 40px;
   --spacing-60: 60px;
+  --spacing-64: 64px;
+  --spacing-80: 80px;
+  --container-xl: 1200px;
+  --aspect-4-3: 4 / 3;
+  --aspect-16-9: 16 / 9;
 }
 
 @media (prefers-color-scheme: dark) {

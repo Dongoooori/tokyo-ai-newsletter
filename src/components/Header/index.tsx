@@ -4,7 +4,7 @@ import { FaCircleUser } from "react-icons/fa6";
 
 const Header = () => {
   return (
-    <header className='fixed top-0 left-0 right-0 flex items-center justify-between p-4'>
+    <header className='fixed top-0 left-0 right-0 flex items-center justify-between p-4 bg-background border-b border-white'>
       <GiHamburgerMenu size={24}/>
       <div className='text-2xl font-bold'>
         Tokyo Ai Newsletter

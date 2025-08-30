@@ -11,7 +11,7 @@ const CategoryList = () => {
   })
   
   return (
-    <div className='flex items-center justify-center max-w-lg mx-auto gap-x-4 border border-black rounded-full py-4'>
+    <div className='flex items-center justify-center max-w-lg mx-auto gap-x-4 border border-white rounded-full py-4'>
       <Link href="/">
         <button className='text-lg'>ALL</button>
       </Link>
